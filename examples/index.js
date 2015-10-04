@@ -5,7 +5,7 @@ var sample = require( './../lib' ),
 	out;
 
 // Set seed:
-sample.seed = 23;
+sample.seed = 13;
 
 // By default, sample uniformly with replacement:
 x = [ 'a', 'b', 'c', 'd' ];
@@ -24,4 +24,21 @@ out = sample( x, {
 });
 console.log( out );
 
-// Sample without replacment 
+// Sample without replacment
+x = [ 'a', 'b', 'c', 'd' ];
+console.log( 'Sample without replacment:' );
+out = sample( x, {
+	size: 3,
+	replace: false
+});
+console.log( out );
+
+// Sample without replacment when (initial) probabilities are non-uniform
+x = [1,2,3,4,5,6];
+console.log( 'Sample without replacment (with custom probabilities):' );
+out = sample( x, {
+	probs: [0.1,0.1,0.1,0.1,0.1,0.5],
+	size: 3,
+	replace: false
+});
+console.log( out );
