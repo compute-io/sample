@@ -1,0 +1,53 @@
+{
+  "name": "compute-sample",
+  "version": "0.0.0",
+  "description": "Sample elements from an array.",
+  "author": {
+    "name": "Philipp Burckhardt",
+    "email": "pburckhardt@outlook.com"
+  },
+  "contributors": [
+    {
+      "name": "Philipp Burckhardt",
+      "email": "pburckhardt@outlook.com"
+    }
+  ],
+  "scripts": {
+    "test": "mocha",
+    "test-cov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
+    "codecov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/codecov/coverage --report lcovonly -- -R spec && cat ./reports/codecov/coverage/lcov.info | codecov && rm -rf ./reports/codecov"
+  },
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/compute-io/sample.git"
+  },
+  "keywords": [
+    "compute.io",
+    "compute",
+    "computation",
+    "mathematics",
+    "math",
+    "statistics",
+    "stats",
+    "sampling",
+    "with replacement",
+    "discrete",
+    "distribution",
+    "urn"
+  ],
+  "bugs": {
+    "url": "https://github.com/compute-io/sample/issues"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "chai": "3.x.x",
+    "codecov.io": "^0.1.5",
+    "istanbul": "^0.3.0",
+    "jshint": "2.x.x",
+    "jshint-stylish": "2.x.x",
+    "mocha": "2.x.x"
+  },
+  "license": "MIT"
+}
