@@ -1,8 +1,8 @@
 'use strict';
 
-var sample = require( './../lib' ),
-	x,
-	out;
+var sample = require( './../lib' );
+var x;
+var out;
 
 // Set seed:
 sample.seed = 13;

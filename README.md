@@ -146,9 +146,9 @@ out = sample( [ 3, 6, 9 ] );
 ## Examples
 
 ``` javascript
-var sample = require( 'compute-sample' ),
-	x,
-	out;
+var sample = require( 'compute-sample' );
+var x;
+var out;
 
 // Set seed:
 sample.seed = 13;
