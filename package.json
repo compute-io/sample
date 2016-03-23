@@ -42,6 +42,7 @@
   "dependencies": {
     "compute-lcg": "^1.0.0",
     "math-floor": "^1.0.1",
+    "validate.io-array-like": "^1.0.1",
     "validate.io-boolean-primitive": "^1.0.0",
     "validate.io-nonnegative-integer": "^1.0.0",
     "validate.io-object": "^1.0.4",
